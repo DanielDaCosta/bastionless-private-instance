@@ -1,5 +1,5 @@
 availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
-name               = "private-instance-server"
+name               = "NAME OF YOUR APPLICATION"
 private_start_ip   = "30"
 public_start_ip    = "20"
 region             = "us-east-1"
