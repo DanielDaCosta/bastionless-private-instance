@@ -1,4 +1,4 @@
-# bastionless-private-instace
+# Bastion-less: Accessing Private Ec2 instance with Session Manager
 
 In this repository we'll set up a Private EC2 instance (in a private subnet), and use SSM session manager to access the instance and access a Jupyter Notebook server using PostFowarding for AWS Sytems Manger.
 
