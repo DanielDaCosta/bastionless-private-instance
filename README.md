@@ -2,7 +2,7 @@
 
 In this repository we'll set up a Private EC2 instance (in a private subnet), and use SSM session manager to access the instance and access a Jupyter Notebook server using PostFowarding for AWS Sytems Manger.
 
-Session Manager provides secure instance management without opening *inbound ports* or setting up *bastion hosts* or *managing the SSH keys*.
+Session Manager provides secure instance management **without opening inbound ports** or **setting up bastion hosts** or **managing the SSH keys**.
 
 # Introduction
 
@@ -12,7 +12,7 @@ A **Bastion Host** is a server whose purpose is to provide access to a private n
 
 The bastion host also has a cost associated with it as it is a running EC2 instance. Even a t2.micro costs about $10/month.
 
-Howerver there are some drawbacks:
+However there are some drawbacks:
 
 - You will need to allow SSH inbound rule at your bastion
 - You need to open ports on yout private EC2 instance in order to connect it to your bastion
