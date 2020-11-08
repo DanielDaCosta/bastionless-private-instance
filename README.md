@@ -28,8 +28,6 @@ However there are some drawbacks:
 - The user does not need to use bastion host and Public IPs.
 - No need to open the ports in the security groups
 
-[IMAGE]
-
 # Folder Structure
 ```
 .
