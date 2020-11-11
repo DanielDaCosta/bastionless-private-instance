@@ -77,7 +77,7 @@ vpc_cidr           = "10.0.0.0/16"
 
 # Usage
 
-## Ec2 instances configurations
+## EC2 instances configurations
 
 Our instance will be deployed on the Private Subnet without a Public IP address configuration since we won't need it.
 In order to allow Session Manager access to our instance will need to attach the following IAM role: AmazonSSMManagedInstanceCore. This policy grants instances the permissions needed for core Systems Manager functionality.
