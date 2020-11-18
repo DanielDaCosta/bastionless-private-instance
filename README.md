@@ -81,7 +81,7 @@ vpc_cidr           = "10.0.0.0/16"
 
 Our instance will be deployed on the Private Subnet without a Public IP address configuration since we won't need it.
 In order to allow Session Manager access to our instance will need to attach the following IAM role: AmazonSSMManagedInstanceCore. This policy grants instances the permissions needed for core Systems Manager functionality.
-For the VPC security group we won't need to include any inbound rules, allowing only outbound traffic.
+For the VPC security group we will not need to include any inbound rules, allowing only outbound traffic.
 
 If you already have the network ready, run the terraform template: `terraform apply -var-file='variables.tfvars'`. It will launch the EC2 instance in the Private Subnet.
 
