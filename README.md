@@ -1,4 +1,4 @@
-# Bastion-less: Accessing Private Ec2 instance with Session Manager
+# Bastion-less: Accessing Private EC2 instance with Session Manager
 
 In this repository we'll set up a Private EC2 instance (in a private subnet), and use SSM session manager to access the instance and access a Jupyter Notebook server using PostFowarding for AWS Sytems Manger.
 
@@ -6,7 +6,7 @@ Session Manager provides secure instance management **without opening inbound po
 
 # Introduction
 
-It is well known that we connot directly connect to a private ec2 instance unless there is VPN Connectivity or Direct Connect or other network connectivity source with the VPC. A common approach to connect to a EC2 intance on a private subnet of your VPC is to use a **Bastion Host**.
+It is well known that we connot directly connect to a private EC2 instance unless there is VPN Connectivity or Direct Connect or other network connectivity source with the VPC. A common approach to connect to a EC2 intance on a private subnet of your VPC is to use a **Bastion Host**.
 
 A **Bastion Host** is a server whose purpose is to provide access to a private network from a external network (such as: the Internet). Because of its exposure to potential attack, a bastion host must minimize the chances of penetrations. When using a bastion host, you log into the bastion host first, and then into your target private instance. With this approach only the bastion host will have an external IP address.
 
