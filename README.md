@@ -93,7 +93,7 @@ $ aws ssm start-session --target {YOUR_TARGET_INSTANCE_ID}
 ![SessionManger](Images/SessionManager.png)
 
 ## Session Manager - Port Forwarding
-In this post, we won't go through how to set up a Jupyter Notebook Server on an EC2 instance, but you can find all the information need to do so on this [link](https://www.dataplyr.com/blog/2017/04/22/aws-post/).
+In this post, we will not go through how to set up a Jupyter Notebook Server on an EC2 instance, but you can find all the information need to do so on this [link](https://www.dataplyr.com/blog/2017/04/22/aws-post/).
 Once the prerequisites are met, you can use the AWS CLI to open the tunnel:
 ```
 $ aws ssm start-session --target {YOUR_TARGET_INSTANCE_ID} --document-name AWS-StartPortForwardingSession --parameters "portNumber"=["8888"],"localPortNumber"=["8888"]
