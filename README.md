@@ -65,7 +65,7 @@ You can check on how to install the plugin for different OS in [here](https://do
 If do not have this set up ready, you can use the Terraform template on folder `network`.
 Fill the `terraform.tfvars` with your desired configuration and then run: `terraform apply -var-file='terraform.tfvars'`
 *terraform.tfvars*
-```
+```terraform
 availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
 name               = "NAME OF YOUR APPLICATION"
 private_start_ip   = "30"
