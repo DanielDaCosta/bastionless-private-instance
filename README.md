@@ -87,7 +87,7 @@ If you already have the network ready, run the terraform template: `terraform ap
 
 ## Session Manager - Start a session
 
-```
+```bash
 $ aws ssm start-session --target {YOUR_TARGET_INSTANCE_ID}
 ```
 ![SessionManger](Images/SessionManager.png)
